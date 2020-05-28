@@ -3,16 +3,19 @@
 set -e
 
 version="1.0.0"
+name="Postman Echo v$version - openapi"
+openapi_yaml="./openapi/postman-echo-oas-v$version.yaml"
+collection_json="./openapi/postman-echo-postman-v$version.json"
 
-openapi2postmanv2 -s ./openapi/postman-echo-oas-v$version.yaml -o ./openapi/postman-echo-postman-v$version.json
+openapi2postmanv2 -s $openapi_yaml -o $collection_json
 
-collection_id=$(postmanctl get collection -o jsonpath="{[?(@.name=='Postman Echo v$version - openapi')].id}")
+collection_id=$(postmanctl get collection -o jsonpath="{[?(@.name=='$name')].id}")
 
 if [ -z $collection_id ]
 then
-  collection_id=$(cat ./openapi/postman-echo-postman-v$version.json | postmanctl create collection)
+  collection_id=$(cat $collection_json | postmanctl create collection)
   echo "$collection_id created in Postman!"
 else
-  collection_id=$(cat ./openapi/postman-echo-postman-v$version.json | postmanctl replace collection $collection_id)
+  collection_id=$(cat $collection_json | postmanctl replace collection $collection_id)
   echo "$collection_id updated in Postman!"
 fi

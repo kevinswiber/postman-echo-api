@@ -20,6 +20,11 @@ tags:
 # https://github.com/postmanlabs/postman-echo/blob/master/postman-echo/core.py
 
 paths:
+  /test:
+    get:
+      responses:
+        default:
+          description: Hooray
   /get:
     get:
       tags:
