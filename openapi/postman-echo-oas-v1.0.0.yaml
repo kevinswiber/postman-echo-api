@@ -6,6 +6,7 @@ info:
 
 servers:
   - url: https://postman-echo.com
+  - url: http://postman-echo.com
 
 tags:
   - name: auth
