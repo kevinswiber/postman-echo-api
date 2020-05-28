@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   version: '1.0.0'
-  title: postman-echo
+  title: Postman Echo v1.0.0 - openapi
   description: An unofficial OpenAPI definition for [postman-echo.com](https://postman-echo.com).
 
 servers:
