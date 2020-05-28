@@ -7,7 +7,7 @@ name="Postman Echo v$version - openapi"
 openapi_yaml="./openapi/postman-echo-oas-v$version.yaml"
 collection_json="./openapi/postman-echo-postman-v$version.json"
 
-openapi2postmanv2 -s $openapi_yaml -o $collection_json
+openapi2postmanv2 -s $openapi_yaml -o $collection_json -p
 
 collection_id=$(postmanctl get collection -o jsonpath="{[?(@.name=='$name')].id}")
 

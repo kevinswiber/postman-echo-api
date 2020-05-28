@@ -1,1 +1,1706 @@
-{"item":[{"id":"89f710dd-65cf-4b3d-a119-5432714d4d37","name":"/test","request":{"name":"/test","description":{},"url":{"path":["test"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"2a0d8b87-0e8c-4bd6-9601-cf62dd7397c0","name":"Hooray","originalRequest":{"url":{"path":["test"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"c8f8b5ba-96a1-4e79-a410-f38913dac1d4","name":"Returns the GET request's data. Accepts any query parameters and any headers.\n","request":{"name":"Returns the GET request's data. Accepts any query parameters and any headers.\n","description":{},"url":{"path":["get"],"host":["{{baseUrl}}"],"query":[{"description":"Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n","key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"0a89cc0d-afb1-4a85-bfb9-c78daace6970","name":"OK","originalRequest":{"url":{"path":["get"],"host":["{{baseUrl}}"],"query":[{"key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"\"<object>\"","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"73de9a16-d2d3-4048-a4cb-b6f1d4ca75aa","name":"Returns the DELETE request's data. Accepts any query parameters and any headers.\n","request":{"name":"Returns the DELETE request's data. Accepts any query parameters and any headers.\n","description":{},"url":{"path":["delete"],"host":["{{baseUrl}}"],"query":[{"description":"Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n","key":"freeform","value":"<object>"}],"variable":[]},"method":"DELETE","auth":{"type":"noauth"}},"response":[{"id":"43894ae2-6633-4852-9a09-242be31fc9a5","name":"OK","originalRequest":{"url":{"path":["delete"],"host":["{{baseUrl}}"],"query":[{"key":"freeform","value":"<object>"}],"variable":[]},"method":"DELETE","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"64db194f-ca67-4aa2-980f-b57bad403277","name":"Returns the POSTed data","request":{"name":"Returns the POSTed data","description":{},"url":{"path":["post"],"host":["{{baseUrl}}"],"query":[{"description":"Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n","key":"freeform","value":"<object>"}],"variable":[]},"header":[{"key":"Content-Type","value":"application/x-www-form-urlencoded"}],"method":"POST","auth":{"type":"noauth"},"body":{"mode":"urlencoded","urlencoded":[{"key":"custname","value":"<string>","description":"Customer name"},{"key":"custtel","value":"<string>","description":"Customer phone number"},{"key":"custemail","value":"<email>","description":"Customer email address"},{"key":"size","value":"<string>","description":"Pizza size (This can only be one of small,medium,large)"},{"key":"topping","value":"[\"<string>\",\"<string>\"]","description":"Pizza toppings"},{"key":"delivery","value":"<string>","description":"Delivery time"},{"key":"comments","value":"<string>","description":"Comments"}]}},"response":[{"id":"51670a6b-5953-4830-9f5d-6859417d4a3c","name":"OK","originalRequest":{"url":{"path":["post"],"host":["{{baseUrl}}"],"query":[{"key":"freeform","value":"<object>"}],"variable":[]},"method":"POST","body":{"mode":"urlencoded","urlencoded":[{"description":{"content":"Customer name","type":"text/plain"},"key":"custname","value":"Alice"},{"description":{"content":"Customer phone number","type":"text/plain"},"key":"custtel","value":"+1-202-555-0100"},{"description":{"content":"Customer email address","type":"text/plain"},"key":"custemail","value":"alice@wonderland.net"},{"description":{"content":"Pizza size (This can only be one of small,medium,large)","type":"text/plain"},"key":"size","value":"medium"},{"description":{"content":"Pizza toppings","type":"text/plain"},"key":"topping","value":"[\"cheese\",\"mushroom\"]"},{"description":{"content":"Delivery time","type":"text/plain"},"key":"delivery","value":"19:00"},{"description":{"content":"Comments","type":"text/plain"},"key":"comments","value":"Ring the door bell three times"}]}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"args\": \"<object>\",\n \"headers\": \"<object>\",\n \"origin\": \"10.100.10.10, 10.100.10.44, 52.91.14.13\",\n \"url\": \"https://postman-echo.com/post\"\n}","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"08980d6f-db3c-4ecc-86c8-0dc50c9f5479","name":"Returns Origin IP.","request":{"name":"Returns Origin IP.","description":{},"url":{"path":["ip"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"0e7f92bf-acac-4fc3-9bdd-7303055923d3","name":"OK","originalRequest":{"url":{"path":["ip"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"origin\": \"10.100.10.10\"\n}","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"1e1c7fda-89c3-41df-a611-a75b5e161749","name":"Returns the user agent.","request":{"name":"Returns the user agent.","description":{},"url":{"path":["user-agent"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"588c19c9-8a55-4069-b9af-37ad1e61996e","name":"OK","originalRequest":{"url":{"path":["user-agent"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"user-agent\": \"curl/7.37.0\"\n}","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"a3740733-7bdf-4057-960e-95ad792d62f3","name":"Returns the request headers.","request":{"name":"Returns the request headers.","description":{},"url":{"path":["headers"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"73558bad-c73b-4034-9862-aa38263063eb","name":"OK","originalRequest":{"url":{"path":["headers"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"headers\": \"<object>\"\n}","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"b8f1af2b-8d8c-41cf-bee1-1ce7fbb858bf","name":"Delays responding for min(n, 10) seconds.","request":{"name":"Delays responding for min(n, 10) seconds.","description":{},"url":{"path":["delay",":n"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) Response delay, in seconds.","type":"any","value":"<integer>","key":"n"}]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"fe282c9b-7c26-4a60-9e4d-5861c09a5859","name":"OK","originalRequest":{"url":{"path":["delay",":n"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"n"}]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"\"\"","cookie":[],"_postman_previewlanguage":"json"}],"event":[]},{"id":"94b8369d-017a-4a23-9760-df0d055fe98f","name":"Challenges HTTPBasic Auth.","request":{"name":"Challenges HTTPBasic Auth.","description":{},"url":{"path":["basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) Username. Use the same username in the path AND for authorization.","type":"any","value":"<string>","key":"user"},{"description":"(Required) Password. Use the same password in the path AND for authorization.","type":"any","value":"<string>","key":"password"}]},"method":"GET","auth":{"type":"basic"}},"response":[{"id":"c1bc6ca1-b37c-4a31-ba6f-f7d1c0790225","name":"OK","originalRequest":{"url":{"path":["basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"user"},{"type":"any","key":"password"}]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"authenticated\": true,\n \"user\": \"<string>\"\n}","cookie":[],"_postman_previewlanguage":"json"},{"id":"1fe91f31-b9b7-4384-bb8c-4b0f744e7b38","name":"Unauthorized (The username and password used for Basic auth do not match those in the URL path.)","originalRequest":{"url":{"path":["basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"user"},{"type":"any","key":"password"}]},"method":"GET","body":{}},"status":"Unauthorized","code":401,"header":[{"key":"Www-Authenticate","value":"Basic realm=\"Fake Realm\"","description":""},{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"7759e547-ba1c-48a9-bbab-121cc0ab3cd9","name":"Hidden Basic authentication","request":{"name":"Hidden Basic authentication","description":{"content":"Returns 404 Not Found unless the request is authenticated.","type":"text/plain"},"url":{"path":["hidden-basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) Username. Use the same username in the path AND for authorization.","type":"any","value":"<string>","key":"user"},{"description":"(Required) Password. Use the same password in the path AND for authorization.","type":"any","value":"<string>","key":"password"}]},"method":"GET","auth":{"type":"basic"}},"response":[{"id":"8c1537ba-cfb9-48ce-9822-c7ad7aa02147","name":"OK","originalRequest":{"url":{"path":["hidden-basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"user"},{"type":"any","key":"password"}]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"authenticated\": true,\n \"user\": \"<string>\"\n}","cookie":[],"_postman_previewlanguage":"json"},{"id":"ebc8877b-4a34-4356-b97e-7dc1918166af","name":"Unautorized (the username and password used for Basic auth do not match those in the URL path.)","originalRequest":{"url":{"path":["hidden-basic-auth",":user",":password"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"user"},{"type":"any","key":"password"}]},"method":"GET","body":{}},"status":"Not Found","code":404,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"67e226ca-6705-4a96-b35c-a5fddbd64526","name":"Tests Bearer authentication","request":{"name":"Tests Bearer authentication","description":{},"url":{"path":["bearer"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"bearer"}},"response":[{"id":"bd04d547-732e-4c17-8c43-53a4863814ea","name":"Authorized","originalRequest":{"url":{"path":["bearer"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/json"}],"body":"{\n \"authenticated\": true,\n \"token\": \"<string>\"\n}","cookie":[],"_postman_previewlanguage":"json"},{"id":"f6bdcadd-f13a-446d-b3aa-722c101e2c80","name":"Unauthorized","originalRequest":{"url":{"path":["bearer"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"Not Found","code":404,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"80204804-1001-453f-bb30-351dfcbd9c79","name":"status/{status Code}","item":[{"id":"230b8c39-1878-403f-8802-02ced0d9310b","name":"/status/:statusCode","request":{"name":"/status/:statusCode","description":{},"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.","type":"any","value":"schema type not provided","key":"statusCode"}]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"53ae4fa6-afbf-4c61-8539-bd5aa54e2f26","name":"A response with the requested status code.","originalRequest":{"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"statusCode"}]},"method":"GET","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"67d244ad-6f92-46de-b73c-49a411bec66f","name":"/status/:statusCode","request":{"name":"/status/:statusCode","description":{},"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.","type":"any","value":"schema type not provided","key":"statusCode"}]},"method":"POST","auth":{"type":"noauth"}},"response":[{"id":"af0e5f7e-03e0-4a61-85ab-885c61e0073a","name":"A response with the requested status code.","originalRequest":{"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"statusCode"}]},"method":"POST","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"74adf4d7-27b8-42e7-92af-bdbe4ba6cdfc","name":"/status/:statusCode","request":{"name":"/status/:statusCode","description":{},"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.","type":"any","value":"schema type not provided","key":"statusCode"}]},"method":"PATCH","auth":{"type":"noauth"}},"response":[{"id":"e8e80358-ee1f-4ef6-8c33-a60104b0bbba","name":"A response with the requested status code.","originalRequest":{"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"statusCode"}]},"method":"PATCH","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"ff57b0b6-3f23-43c6-a913-0f8c60ce8de2","name":"/status/:statusCode","request":{"name":"/status/:statusCode","description":{},"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.","type":"any","value":"schema type not provided","key":"statusCode"}]},"method":"PUT","auth":{"type":"noauth"}},"response":[{"id":"957fb44c-be8b-4369-88ca-a5a27b7f898d","name":"A response with the requested status code.","originalRequest":{"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"statusCode"}]},"method":"PUT","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"d62293d9-23d8-441a-a319-9ca76e1d1787","name":"/status/:statusCode","request":{"name":"/status/:statusCode","description":{},"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"description":"(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.","type":"any","value":"schema type not provided","key":"statusCode"}]},"method":"DELETE","auth":{"type":"noauth"}},"response":[{"id":"ce5f6054-8eaa-4721-a218-fea5de1ab0b9","name":"A response with the requested status code.","originalRequest":{"url":{"path":["status",":statusCode"],"host":["{{baseUrl}}"],"query":[],"variable":[{"type":"any","key":"statusCode"}]},"method":"DELETE","body":{}},"status":"Internal Server Error","code":500,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]}],"event":[]},{"id":"0e1761f5-615c-421e-98eb-4fe46c6bf8fe","name":"Returns some XML.","request":{"name":"Returns some XML.","description":{},"url":{"path":["xml"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"482ab90f-b06b-4489-a383-ccce91788814","name":"OK","originalRequest":{"url":{"path":["xml"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"application/xml"}],"body":"","cookie":[],"_postman_previewlanguage":"xml"}],"event":[]},{"id":"3b5e7ca7-8d03-4a9c-a030-8064f0149a49","name":"Returns an HTML page","request":{"name":"Returns an HTML page","description":{},"url":{"path":["html"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"d00f2c98-3c1e-4fbb-9fa9-89f0d43c552b","name":"OK","originalRequest":{"url":{"path":["html"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/html"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"d38b9404-f486-442f-b78c-704acdf5b5b8","name":"Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.","request":{"name":"Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.","description":{},"url":{"path":["cache"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"If-Modified-Since","value":"<string>","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"},{"key":"If-None-Match","value":"<string>","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"}],"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"cb356465-3f83-48e5-8d1d-cc87dc13a7eb","name":"Neigher If-Modified-Since nor If-None-Match header is provided","originalRequest":{"url":{"path":["cache"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"If-Modified-Since","value":"Wed, 21 Oct 2015 07:28:00 GMT","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"},{"key":"If-None-Match","value":"<string>","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"}],"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"},{"id":"eb40de85-f4a2-4bcb-b6bb-0c0d16599441","name":"If-Modified-Since or If-None-Match header is provided","originalRequest":{"url":{"path":["cache"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"If-Modified-Since","value":"Wed, 21 Oct 2015 07:28:00 GMT","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"},{"key":"If-None-Match","value":"<string>","description":"For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"}],"method":"GET","body":{}},"status":"Not Modified","code":304,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"266e6340-df2a-42a9-be75-52cb4a040809","name":"cookies","item":[{"id":"1355acfb-9262-4863-b674-a1a49b00a12f","name":"Returns cookie data","request":{"name":"Returns cookie data","description":{},"url":{"path":["cookies"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"b4c6b3d2-d89b-4fcc-899b-a3400e720ef7","name":"OK","originalRequest":{"url":{"path":["cookies"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"92cb16fa-1c77-47e0-a9cd-59b883b79347","name":"Sets one or more simple cookies","request":{"name":"Sets one or more simple cookies","description":{},"url":{"path":["cookies","set"],"host":["{{baseUrl}}"],"query":[{"description":"Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n","key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"3e4fc105-366f-435f-ac7e-7954b8e1558b","name":"OK","originalRequest":{"url":{"path":["cookies","set"],"host":["{{baseUrl}}"],"query":[{"key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]},{"id":"f5add160-4d3b-44ed-bb08-b1aba26fefff","name":"Delete one or more simple cookies","request":{"name":"Delete one or more simple cookies","description":{},"url":{"path":["cookies","delete"],"host":["{{baseUrl}}"],"query":[{"description":"Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n","key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","auth":{"type":"noauth"}},"response":[{"id":"67d8cb1e-471a-48d3-9ec3-2cb24d1353b7","name":"OK","originalRequest":{"url":{"path":["cookies","delete"],"host":["{{baseUrl}}"],"query":[{"key":"freeform","value":"<object>"}],"variable":[]},"method":"GET","body":{}},"status":"OK","code":200,"header":[{"key":"Content-Type","value":"text/plain"}],"body":"","cookie":[],"_postman_previewlanguage":"text"}],"event":[]}],"event":[]}],"event":[],"variable":[{"id":"baseUrl","type":"string","value":"https://postman-echo.com"}],"info":{"_postman_id":"5255c097-b94d-4f51-9821-8c375431a1e5","name":"Postman Echo v1.0.0 - openapi","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json","description":{"content":"An unofficial OpenAPI definition for [postman-echo.com](https://postman-echo.com).","type":"text/plain"}}}
+{
+    "item": [
+        {
+            "id": "66178f17-0294-46d0-a04a-6ece154c770d",
+            "name": "/test",
+            "request": {
+                "name": "/test",
+                "description": {},
+                "url": {
+                    "path": [
+                        "test"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "19c78278-42fb-4222-828c-3b62ab93777b",
+                    "name": "Hooray",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "test"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "bef0f5d0-c95c-401b-b82f-8f30f6cdefb2",
+            "name": "Returns the GET request's data. Accepts any query parameters and any headers.\n",
+            "request": {
+                "name": "Returns the GET request's data. Accepts any query parameters and any headers.\n",
+                "description": {},
+                "url": {
+                    "path": [
+                        "get"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "description": "Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n",
+                            "key": "freeform",
+                            "value": "<object>"
+                        }
+                    ],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "f4ee8cd1-a654-47e1-ac23-584554272395",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "get"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "key": "freeform",
+                                    "value": "<object>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "\"<object>\"",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "ce0396d5-c39f-4742-a90c-de112ed22a87",
+            "name": "Returns the DELETE request's data. Accepts any query parameters and any headers.\n",
+            "request": {
+                "name": "Returns the DELETE request's data. Accepts any query parameters and any headers.\n",
+                "description": {},
+                "url": {
+                    "path": [
+                        "delete"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "description": "Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n",
+                            "key": "freeform",
+                            "value": "<object>"
+                        }
+                    ],
+                    "variable": []
+                },
+                "method": "DELETE",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "746e12cc-dea6-4621-9f9c-0d033cd94a97",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "delete"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "key": "freeform",
+                                    "value": "<object>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "1414cc02-eeb9-4511-bbe0-6252f8213524",
+            "name": "Returns the POSTed data",
+            "request": {
+                "name": "Returns the POSTed data",
+                "description": {},
+                "url": {
+                    "path": [
+                        "post"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "description": "Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n",
+                            "key": "freeform",
+                            "value": "<object>"
+                        }
+                    ],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded"
+                    }
+                ],
+                "method": "POST",
+                "auth": {
+                    "type": "noauth"
+                },
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "custname",
+                            "value": "<string>",
+                            "description": "Customer name"
+                        },
+                        {
+                            "key": "custtel",
+                            "value": "<string>",
+                            "description": "Customer phone number"
+                        },
+                        {
+                            "key": "custemail",
+                            "value": "<email>",
+                            "description": "Customer email address"
+                        },
+                        {
+                            "key": "size",
+                            "value": "<string>",
+                            "description": "Pizza size (This can only be one of small,medium,large)"
+                        },
+                        {
+                            "key": "topping",
+                            "value": "[\"<string>\",\"<string>\"]",
+                            "description": "Pizza toppings"
+                        },
+                        {
+                            "key": "delivery",
+                            "value": "<string>",
+                            "description": "Delivery time"
+                        },
+                        {
+                            "key": "comments",
+                            "value": "<string>",
+                            "description": "Comments"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "b792c012-9f32-441c-aa36-a494b2cd24cf",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "post"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "key": "freeform",
+                                    "value": "<object>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "description": {
+                                        "content": "Customer name",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "custname",
+                                    "value": "Alice"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Customer phone number",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "custtel",
+                                    "value": "+1-202-555-0100"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Customer email address",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "custemail",
+                                    "value": "alice@wonderland.net"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Pizza size (This can only be one of small,medium,large)",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "size",
+                                    "value": "medium"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Pizza toppings",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "topping",
+                                    "value": "[\"cheese\",\"mushroom\"]"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Delivery time",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "delivery",
+                                    "value": "19:00"
+                                },
+                                {
+                                    "description": {
+                                        "content": "Comments",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "comments",
+                                    "value": "Ring the door bell three times"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"args\": \"<object>\",\n \"headers\": \"<object>\",\n \"origin\": \"10.100.10.10, 10.100.10.44, 52.91.14.13\",\n \"url\": \"https://postman-echo.com/post\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "02da3949-3715-4b1c-94db-4c7d82feaf95",
+            "name": "Returns Origin IP.",
+            "request": {
+                "name": "Returns Origin IP.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "ip"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "94d225b9-e9e3-4c30-87ed-8bb7b4eb7ca9",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "ip"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"origin\": \"10.100.10.10\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "01741caf-ac3c-4b2d-8ffc-0abd5fd1ec82",
+            "name": "Returns the user agent.",
+            "request": {
+                "name": "Returns the user agent.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "user-agent"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "48df9136-82ec-4393-9347-931786ad6fe7",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "user-agent"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"user-agent\": \"curl/7.37.0\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "5fd2ad3a-4f5a-45bf-b177-40d9985187d2",
+            "name": "Returns the request headers.",
+            "request": {
+                "name": "Returns the request headers.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "headers"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "fef46987-052e-412a-8230-3d38d3774040",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "headers"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"headers\": \"<object>\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "049e4a5f-eaa5-4556-99a4-c205d3961d44",
+            "name": "Delays responding for min(n, 10) seconds.",
+            "request": {
+                "name": "Delays responding for min(n, 10) seconds.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "delay",
+                        ":n"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Response delay, in seconds.",
+                            "type": "any",
+                            "value": "<integer>",
+                            "key": "n"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "ef0f6b90-2c13-4314-95e6-e548033cf365",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "delay",
+                                ":n"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "key": "n"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "\"\"",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "6b337c7f-90c7-4d7f-97e0-9235fa8e8351",
+            "name": "Challenges HTTPBasic Auth.",
+            "request": {
+                "name": "Challenges HTTPBasic Auth.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "basic-auth",
+                        ":user",
+                        ":password"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Username. Use the same username in the path AND for authorization.",
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "user"
+                        },
+                        {
+                            "description": "(Required) Password. Use the same password in the path AND for authorization.",
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "password"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "basic"
+                }
+            },
+            "response": [
+                {
+                    "id": "ec46bb6c-bd1a-4a34-abe8-6852e274b05c",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "basic-auth",
+                                ":user",
+                                ":password"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "key": "user"
+                                },
+                                {
+                                    "type": "any",
+                                    "key": "password"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"authenticated\": true,\n \"user\": \"<string>\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                },
+                {
+                    "id": "fff51ab2-e38c-44a5-943e-cc7e5c8b7de5",
+                    "name": "Unauthorized (The username and password used for Basic auth do not match those in the URL path.)",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "basic-auth",
+                                ":user",
+                                ":password"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "key": "user"
+                                },
+                                {
+                                    "type": "any",
+                                    "key": "password"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Unauthorized",
+                    "code": 401,
+                    "header": [
+                        {
+                            "key": "Www-Authenticate",
+                            "value": "Basic realm=\"Fake Realm\"",
+                            "description": ""
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "209f5a3d-93de-4748-bfa7-ab90db1a6826",
+            "name": "Hidden Basic authentication",
+            "request": {
+                "name": "Hidden Basic authentication",
+                "description": {
+                    "content": "Returns 404 Not Found unless the request is authenticated.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "hidden-basic-auth",
+                        ":user",
+                        ":password"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Username. Use the same username in the path AND for authorization.",
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "user"
+                        },
+                        {
+                            "description": "(Required) Password. Use the same password in the path AND for authorization.",
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "password"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "basic"
+                }
+            },
+            "response": [
+                {
+                    "id": "25d8e01a-842d-4b88-a23e-c6d815fa4f15",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "hidden-basic-auth",
+                                ":user",
+                                ":password"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "key": "user"
+                                },
+                                {
+                                    "type": "any",
+                                    "key": "password"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"authenticated\": true,\n \"user\": \"<string>\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                },
+                {
+                    "id": "985187af-4069-4387-a565-2af91474d0f7",
+                    "name": "Unautorized (the username and password used for Basic auth do not match those in the URL path.)",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "hidden-basic-auth",
+                                ":user",
+                                ":password"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "key": "user"
+                                },
+                                {
+                                    "type": "any",
+                                    "key": "password"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "873b5887-4565-4dd6-8598-e75f38f1be3b",
+            "name": "Tests Bearer authentication",
+            "request": {
+                "name": "Tests Bearer authentication",
+                "description": {},
+                "url": {
+                    "path": [
+                        "bearer"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "bearer"
+                }
+            },
+            "response": [
+                {
+                    "id": "b9b308fa-5be3-48cb-8943-2a952480b187",
+                    "name": "Authorized",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "bearer"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n \"authenticated\": true,\n \"token\": \"<string>\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                },
+                {
+                    "id": "3d84e367-e007-496b-9547-6359280737e1",
+                    "name": "Unauthorized",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "bearer"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "1072cb54-ef8f-48da-be99-ebe96930d590",
+            "name": "status/{status Code}",
+            "item": [
+                {
+                    "id": "6e3efd3b-56e4-4b11-9435-bd75217d3c57",
+                    "name": "/status/:statusCode",
+                    "request": {
+                        "name": "/status/:statusCode",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "status",
+                                ":statusCode"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "description": "(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.",
+                                    "type": "any",
+                                    "value": "schema type not provided",
+                                    "key": "statusCode"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "fcb6f974-707f-49ae-a37b-c5fe54813d66",
+                            "name": "A response with the requested status code.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "status",
+                                        ":statusCode"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "statusCode"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "2f40306e-402a-4764-b83c-9a2b4e97ac37",
+                    "name": "/status/:statusCode",
+                    "request": {
+                        "name": "/status/:statusCode",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "status",
+                                ":statusCode"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "description": "(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.",
+                                    "type": "any",
+                                    "value": "schema type not provided",
+                                    "key": "statusCode"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "7cb98cbf-83ef-4723-afaa-36975ed61e0c",
+                            "name": "A response with the requested status code.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "status",
+                                        ":statusCode"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "statusCode"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "884908fa-62ea-46b2-8cb0-369fd7cb26d5",
+                    "name": "/status/:statusCode",
+                    "request": {
+                        "name": "/status/:statusCode",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "status",
+                                ":statusCode"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "description": "(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.",
+                                    "type": "any",
+                                    "value": "schema type not provided",
+                                    "key": "statusCode"
+                                }
+                            ]
+                        },
+                        "method": "PATCH",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "fdbdeaf5-1e24-4b78-baad-f4a49f166f5c",
+                            "name": "A response with the requested status code.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "status",
+                                        ":statusCode"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "statusCode"
+                                        }
+                                    ]
+                                },
+                                "method": "PATCH",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "a32d0548-309d-4f13-b166-38e8b3976a3a",
+                    "name": "/status/:statusCode",
+                    "request": {
+                        "name": "/status/:statusCode",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "status",
+                                ":statusCode"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "description": "(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.",
+                                    "type": "any",
+                                    "value": "schema type not provided",
+                                    "key": "statusCode"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "c269c331-607a-49f3-bc5b-37746b3f1403",
+                            "name": "A response with the requested status code.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "status",
+                                        ":statusCode"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "statusCode"
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "92240bac-7377-4d8e-b5ff-3e0c7b13fcc1",
+                    "name": "/status/:statusCode",
+                    "request": {
+                        "name": "/status/:statusCode",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "status",
+                                ":statusCode"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "description": "(Required) The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.",
+                                    "type": "any",
+                                    "value": "schema type not provided",
+                                    "key": "statusCode"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "fc0ecba1-5a97-41bc-b593-6c1af699bca2",
+                            "name": "A response with the requested status code.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "status",
+                                        ":statusCode"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "statusCode"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "9771e5bf-3e30-4ba3-ad78-ce2758c97d00",
+            "name": "Returns some XML.",
+            "request": {
+                "name": "Returns some XML.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "xml"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "48fb1132-479d-4a18-9411-0f6ce1d1323e",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "xml"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/xml"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "xml"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "001a6926-15a7-4688-b84b-6d5b6de2189e",
+            "name": "Returns an HTML page",
+            "request": {
+                "name": "Returns an HTML page",
+                "description": {},
+                "url": {
+                    "path": [
+                        "html"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "8bf2900a-8669-4eca-bdd3-6fd386e17031",
+                    "name": "OK",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "html"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/html"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "f0c74f02-269f-4d28-99a2-1b05f1313193",
+            "name": "Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.",
+            "request": {
+                "name": "Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.",
+                "description": {},
+                "url": {
+                    "path": [
+                        "cache"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "If-Modified-Since",
+                        "value": "<string>",
+                        "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"
+                    },
+                    {
+                        "key": "If-None-Match",
+                        "value": "<string>",
+                        "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"
+                    }
+                ],
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [
+                {
+                    "id": "7c97be8e-4f66-42ca-b9c8-8c8a36da32c9",
+                    "name": "Neigher If-Modified-Since nor If-None-Match header is provided",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "cache"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "If-Modified-Since",
+                                "value": "Wed, 21 Oct 2015 07:28:00 GMT",
+                                "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"
+                            },
+                            {
+                                "key": "If-None-Match",
+                                "value": "<string>",
+                                "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "79275b6a-f901-4a12-b7a6-26ae069727e4",
+                    "name": "If-Modified-Since or If-None-Match header is provided",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "cache"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "If-Modified-Since",
+                                "value": "Wed, 21 Oct 2015 07:28:00 GMT",
+                                "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since\n"
+                            },
+                            {
+                                "key": "If-None-Match",
+                                "value": "<string>",
+                                "description": "For testing purposes this header accepts any value. (???) See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\n"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Not Modified",
+                    "code": 304,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "64577401-7df1-40e0-a22a-74ae0534ebe9",
+            "name": "cookies",
+            "item": [
+                {
+                    "id": "14ddd74f-d903-47cf-b66b-f991906fbd0f",
+                    "name": "Returns cookie data",
+                    "request": {
+                        "name": "Returns cookie data",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "cookies"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "75b8cff6-1aa1-4082-bd05-d35cdeb7c9e1",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "cookies"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "ee6e08fa-c115-47c5-93a3-d4531dfcad62",
+                    "name": "Sets one or more simple cookies",
+                    "request": {
+                        "name": "Sets one or more simple cookies",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "cookies",
+                                "set"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "description": "Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n",
+                                    "key": "freeform",
+                                    "value": "<object>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "39e7fe4d-995a-417d-949a-c9445de1bac7",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "cookies",
+                                        "set"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "freeform",
+                                            "value": "<object>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "8e0df3ce-72d8-4453-ad88-29b7d5375691",
+                    "name": "Delete one or more simple cookies",
+                    "request": {
+                        "name": "Delete one or more simple cookies",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "cookies",
+                                "delete"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "description": "Enter free-form query parameters in the JSON format `{ \"param1\": \"value1\", \"param2\": \"value2\", ... }`.\n\nNote that the parameters will be actually sent as `?param1=value1&param2=value2&...`\n",
+                                    "key": "freeform",
+                                    "value": "<object>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "4016d8bd-8c29-46a4-be3f-6877f7e9c823",
+                            "name": "OK",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "cookies",
+                                        "delete"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "freeform",
+                                            "value": "<object>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "id": "baseUrl",
+            "type": "string",
+            "value": "https://postman-echo.com"
+        }
+    ],
+    "info": {
+        "_postman_id": "5aa129ea-5614-44ae-a89c-80ab0a17b8a3",
+        "name": "Postman Echo v1.0.0 - openapi",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "An unofficial OpenAPI definition for [postman-echo.com](https://postman-echo.com).",
+            "type": "text/plain"
+        }
+    }
+}
