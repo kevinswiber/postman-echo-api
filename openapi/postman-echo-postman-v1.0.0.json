@@ -1,61 +1,7 @@
 {
     "item": [
         {
-            "id": "66178f17-0294-46d0-a04a-6ece154c770d",
-            "name": "/test",
-            "request": {
-                "name": "/test",
-                "description": {},
-                "url": {
-                    "path": [
-                        "test"
-                    ],
-                    "host": [
-                        "{{baseUrl}}"
-                    ],
-                    "query": [],
-                    "variable": []
-                },
-                "method": "GET",
-                "auth": {
-                    "type": "noauth"
-                }
-            },
-            "response": [
-                {
-                    "id": "19c78278-42fb-4222-828c-3b62ab93777b",
-                    "name": "Hooray",
-                    "originalRequest": {
-                        "url": {
-                            "path": [
-                                "test"
-                            ],
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "query": [],
-                            "variable": []
-                        },
-                        "method": "GET",
-                        "body": {}
-                    },
-                    "status": "Internal Server Error",
-                    "code": 500,
-                    "header": [
-                        {
-                            "key": "Content-Type",
-                            "value": "text/plain"
-                        }
-                    ],
-                    "body": "",
-                    "cookie": [],
-                    "_postman_previewlanguage": "text"
-                }
-            ],
-            "event": []
-        },
-        {
-            "id": "bef0f5d0-c95c-401b-b82f-8f30f6cdefb2",
+            "id": "991f71ec-709f-4dcc-8913-c7c588f67cc5",
             "name": "Returns the GET request's data. Accepts any query parameters and any headers.\n",
             "request": {
                 "name": "Returns the GET request's data. Accepts any query parameters and any headers.\n",
@@ -83,7 +29,7 @@
             },
             "response": [
                 {
-                    "id": "f4ee8cd1-a654-47e1-ac23-584554272395",
+                    "id": "442b48a2-5e6b-48ba-ae79-928a934e2fc6",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -120,7 +66,7 @@
             "event": []
         },
         {
-            "id": "ce0396d5-c39f-4742-a90c-de112ed22a87",
+            "id": "d287f56d-ab80-4d67-9975-0edc096fcaeb",
             "name": "Returns the DELETE request's data. Accepts any query parameters and any headers.\n",
             "request": {
                 "name": "Returns the DELETE request's data. Accepts any query parameters and any headers.\n",
@@ -148,7 +94,7 @@
             },
             "response": [
                 {
-                    "id": "746e12cc-dea6-4621-9f9c-0d033cd94a97",
+                    "id": "66022f66-9ea0-4f71-9e13-dfbaca97953d",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -185,7 +131,7 @@
             "event": []
         },
         {
-            "id": "1414cc02-eeb9-4511-bbe0-6252f8213524",
+            "id": "d34b52e0-4df2-4e3f-96d7-009a09f9e8da",
             "name": "Returns the POSTed data",
             "request": {
                 "name": "Returns the POSTed data",
@@ -259,7 +205,7 @@
             },
             "response": [
                 {
-                    "id": "b792c012-9f32-441c-aa36-a494b2cd24cf",
+                    "id": "981c0726-ee9b-46c2-a637-fd9fc0784391",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -356,7 +302,7 @@
             "event": []
         },
         {
-            "id": "02da3949-3715-4b1c-94db-4c7d82feaf95",
+            "id": "cab14697-c4be-4f13-9c8d-53f30dc5a7fe",
             "name": "Returns Origin IP.",
             "request": {
                 "name": "Returns Origin IP.",
@@ -378,7 +324,7 @@
             },
             "response": [
                 {
-                    "id": "94d225b9-e9e3-4c30-87ed-8bb7b4eb7ca9",
+                    "id": "66ffd646-1308-456d-98a8-5dee5524f379",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -410,7 +356,7 @@
             "event": []
         },
         {
-            "id": "01741caf-ac3c-4b2d-8ffc-0abd5fd1ec82",
+            "id": "e7dc6b14-3ca5-45a1-b42e-fe4dc74ef049",
             "name": "Returns the user agent.",
             "request": {
                 "name": "Returns the user agent.",
@@ -432,7 +378,7 @@
             },
             "response": [
                 {
-                    "id": "48df9136-82ec-4393-9347-931786ad6fe7",
+                    "id": "cafd0550-2b0b-45ad-a62a-4f0b3a7bb4b1",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -464,7 +410,7 @@
             "event": []
         },
         {
-            "id": "5fd2ad3a-4f5a-45bf-b177-40d9985187d2",
+            "id": "1b4cecec-7597-453a-82e7-f43bd1ded463",
             "name": "Returns the request headers.",
             "request": {
                 "name": "Returns the request headers.",
@@ -486,7 +432,7 @@
             },
             "response": [
                 {
-                    "id": "fef46987-052e-412a-8230-3d38d3774040",
+                    "id": "93eb147f-1dbd-4453-89f4-dd210a6da8d1",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -518,7 +464,7 @@
             "event": []
         },
         {
-            "id": "049e4a5f-eaa5-4556-99a4-c205d3961d44",
+            "id": "498a1e87-932b-4e1c-8831-7dec935107b1",
             "name": "Delays responding for min(n, 10) seconds.",
             "request": {
                 "name": "Delays responding for min(n, 10) seconds.",
@@ -548,7 +494,7 @@
             },
             "response": [
                 {
-                    "id": "ef0f6b90-2c13-4314-95e6-e548033cf365",
+                    "id": "f358f544-5e78-4edc-b1c1-9e542dd2d11e",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -586,7 +532,7 @@
             "event": []
         },
         {
-            "id": "6b337c7f-90c7-4d7f-97e0-9235fa8e8351",
+            "id": "59f8b48f-f9b2-4d01-a6e8-1058ca966b49",
             "name": "Challenges HTTPBasic Auth.",
             "request": {
                 "name": "Challenges HTTPBasic Auth.",
@@ -623,7 +569,7 @@
             },
             "response": [
                 {
-                    "id": "ec46bb6c-bd1a-4a34-abe8-6852e274b05c",
+                    "id": "1451c6df-903d-4b94-bada-b5a905ebeb4f",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -663,7 +609,7 @@
                     "_postman_previewlanguage": "json"
                 },
                 {
-                    "id": "fff51ab2-e38c-44a5-943e-cc7e5c8b7de5",
+                    "id": "17c75c2c-f82a-438e-ac10-c1cff5853d60",
                     "name": "Unauthorized (The username and password used for Basic auth do not match those in the URL path.)",
                     "originalRequest": {
                         "url": {
@@ -711,7 +657,7 @@
             "event": []
         },
         {
-            "id": "209f5a3d-93de-4748-bfa7-ab90db1a6826",
+            "id": "1dd8905e-583e-46d3-be9d-d9aaa6f2f3aa",
             "name": "Hidden Basic authentication",
             "request": {
                 "name": "Hidden Basic authentication",
@@ -751,7 +697,7 @@
             },
             "response": [
                 {
-                    "id": "25d8e01a-842d-4b88-a23e-c6d815fa4f15",
+                    "id": "f0ad9ab8-5b13-4802-88b1-d6d5730aa313",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -791,7 +737,7 @@
                     "_postman_previewlanguage": "json"
                 },
                 {
-                    "id": "985187af-4069-4387-a565-2af91474d0f7",
+                    "id": "e0668c81-0ef9-4b8c-896d-bafaebff3ae7",
                     "name": "Unautorized (the username and password used for Basic auth do not match those in the URL path.)",
                     "originalRequest": {
                         "url": {
@@ -834,7 +780,7 @@
             "event": []
         },
         {
-            "id": "873b5887-4565-4dd6-8598-e75f38f1be3b",
+            "id": "5e81a40e-4f4d-453c-a879-30c3b0a64569",
             "name": "Tests Bearer authentication",
             "request": {
                 "name": "Tests Bearer authentication",
@@ -856,7 +802,7 @@
             },
             "response": [
                 {
-                    "id": "b9b308fa-5be3-48cb-8943-2a952480b187",
+                    "id": "7f69e325-2dbf-4aba-8ac9-506609f43f0a",
                     "name": "Authorized",
                     "originalRequest": {
                         "url": {
@@ -885,7 +831,7 @@
                     "_postman_previewlanguage": "json"
                 },
                 {
-                    "id": "3d84e367-e007-496b-9547-6359280737e1",
+                    "id": "c426fa10-0c18-4f0e-9860-acdfeeaf9973",
                     "name": "Unauthorized",
                     "originalRequest": {
                         "url": {
@@ -917,11 +863,11 @@
             "event": []
         },
         {
-            "id": "1072cb54-ef8f-48da-be99-ebe96930d590",
+            "id": "b7e226c1-02a7-4853-a3d2-82be462a1854",
             "name": "status/{status Code}",
             "item": [
                 {
-                    "id": "6e3efd3b-56e4-4b11-9435-bd75217d3c57",
+                    "id": "3bc7f6ba-5226-4f71-a869-7344c0d872ad",
                     "name": "/status/:statusCode",
                     "request": {
                         "name": "/status/:statusCode",
@@ -951,7 +897,7 @@
                     },
                     "response": [
                         {
-                            "id": "fcb6f974-707f-49ae-a37b-c5fe54813d66",
+                            "id": "71724803-11f4-4e4b-aeab-48e5de15e3ab",
                             "name": "A response with the requested status code.",
                             "originalRequest": {
                                 "url": {
@@ -989,7 +935,7 @@
                     "event": []
                 },
                 {
-                    "id": "2f40306e-402a-4764-b83c-9a2b4e97ac37",
+                    "id": "03a04b11-611b-45c3-8e77-5448a4c59e66",
                     "name": "/status/:statusCode",
                     "request": {
                         "name": "/status/:statusCode",
@@ -1019,7 +965,7 @@
                     },
                     "response": [
                         {
-                            "id": "7cb98cbf-83ef-4723-afaa-36975ed61e0c",
+                            "id": "27b4c1a9-6e95-46cf-8e1f-86bb6552df2a",
                             "name": "A response with the requested status code.",
                             "originalRequest": {
                                 "url": {
@@ -1057,7 +1003,7 @@
                     "event": []
                 },
                 {
-                    "id": "884908fa-62ea-46b2-8cb0-369fd7cb26d5",
+                    "id": "07eef71b-91c8-46c4-b922-e9b827dc35c6",
                     "name": "/status/:statusCode",
                     "request": {
                         "name": "/status/:statusCode",
@@ -1087,7 +1033,7 @@
                     },
                     "response": [
                         {
-                            "id": "fdbdeaf5-1e24-4b78-baad-f4a49f166f5c",
+                            "id": "e4f91100-c8f2-4b05-8230-7394b9930f76",
                             "name": "A response with the requested status code.",
                             "originalRequest": {
                                 "url": {
@@ -1125,7 +1071,7 @@
                     "event": []
                 },
                 {
-                    "id": "a32d0548-309d-4f13-b166-38e8b3976a3a",
+                    "id": "2d3b7ff7-9932-4b61-b465-dbc9031ae827",
                     "name": "/status/:statusCode",
                     "request": {
                         "name": "/status/:statusCode",
@@ -1155,7 +1101,7 @@
                     },
                     "response": [
                         {
-                            "id": "c269c331-607a-49f3-bc5b-37746b3f1403",
+                            "id": "c8d44016-f951-41ae-8a3b-63830c559081",
                             "name": "A response with the requested status code.",
                             "originalRequest": {
                                 "url": {
@@ -1193,7 +1139,7 @@
                     "event": []
                 },
                 {
-                    "id": "92240bac-7377-4d8e-b5ff-3e0c7b13fcc1",
+                    "id": "d59b9677-3091-4703-95a1-ab8d59f9632f",
                     "name": "/status/:statusCode",
                     "request": {
                         "name": "/status/:statusCode",
@@ -1223,7 +1169,7 @@
                     },
                     "response": [
                         {
-                            "id": "fc0ecba1-5a97-41bc-b593-6c1af699bca2",
+                            "id": "96b361b9-6144-4430-a0c9-e27cc4c9c2c7",
                             "name": "A response with the requested status code.",
                             "originalRequest": {
                                 "url": {
@@ -1264,7 +1210,7 @@
             "event": []
         },
         {
-            "id": "9771e5bf-3e30-4ba3-ad78-ce2758c97d00",
+            "id": "e9fffb6d-bfd9-41dd-bc99-84a66c4e9074",
             "name": "Returns some XML.",
             "request": {
                 "name": "Returns some XML.",
@@ -1286,7 +1232,7 @@
             },
             "response": [
                 {
-                    "id": "48fb1132-479d-4a18-9411-0f6ce1d1323e",
+                    "id": "0809e489-7ed4-4b10-9750-5f502315a802",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -1318,7 +1264,7 @@
             "event": []
         },
         {
-            "id": "001a6926-15a7-4688-b84b-6d5b6de2189e",
+            "id": "42eda4e7-efcb-48cf-b28a-e01ed6f1d1c8",
             "name": "Returns an HTML page",
             "request": {
                 "name": "Returns an HTML page",
@@ -1340,7 +1286,7 @@
             },
             "response": [
                 {
-                    "id": "8bf2900a-8669-4eca-bdd3-6fd386e17031",
+                    "id": "39f05773-af0c-43d8-a0bc-3c7ecdd9e708",
                     "name": "OK",
                     "originalRequest": {
                         "url": {
@@ -1372,7 +1318,7 @@
             "event": []
         },
         {
-            "id": "f0c74f02-269f-4d28-99a2-1b05f1313193",
+            "id": "98ba61af-fcf9-4d3d-87e8-331a50ff39e9",
             "name": "Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.",
             "request": {
                 "name": "Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.",
@@ -1406,7 +1352,7 @@
             },
             "response": [
                 {
-                    "id": "7c97be8e-4f66-42ca-b9c8-8c8a36da32c9",
+                    "id": "46e18022-3bcb-4b34-b29f-e0c7670966b1",
                     "name": "Neigher If-Modified-Since nor If-None-Match header is provided",
                     "originalRequest": {
                         "url": {
@@ -1447,7 +1393,7 @@
                     "_postman_previewlanguage": "text"
                 },
                 {
-                    "id": "79275b6a-f901-4a12-b7a6-26ae069727e4",
+                    "id": "28148b40-9e0e-4395-8efe-6f25e4e47ed9",
                     "name": "If-Modified-Since or If-None-Match header is provided",
                     "originalRequest": {
                         "url": {
@@ -1491,11 +1437,11 @@
             "event": []
         },
         {
-            "id": "64577401-7df1-40e0-a22a-74ae0534ebe9",
+            "id": "12eaaf4b-8fe6-4c9e-8d19-a82bb54b5f5d",
             "name": "cookies",
             "item": [
                 {
-                    "id": "14ddd74f-d903-47cf-b66b-f991906fbd0f",
+                    "id": "7795ad76-00c8-48bb-a87c-3600c55c36d2",
                     "name": "Returns cookie data",
                     "request": {
                         "name": "Returns cookie data",
@@ -1517,7 +1463,7 @@
                     },
                     "response": [
                         {
-                            "id": "75b8cff6-1aa1-4082-bd05-d35cdeb7c9e1",
+                            "id": "236bd960-610b-48f2-bfc3-33047150f041",
                             "name": "OK",
                             "originalRequest": {
                                 "url": {
@@ -1549,7 +1495,7 @@
                     "event": []
                 },
                 {
-                    "id": "ee6e08fa-c115-47c5-93a3-d4531dfcad62",
+                    "id": "2071cf90-425f-4efb-a095-7d252d98b541",
                     "name": "Sets one or more simple cookies",
                     "request": {
                         "name": "Sets one or more simple cookies",
@@ -1578,7 +1524,7 @@
                     },
                     "response": [
                         {
-                            "id": "39e7fe4d-995a-417d-949a-c9445de1bac7",
+                            "id": "005386bb-213e-4967-bf8c-e77a39de9c0b",
                             "name": "OK",
                             "originalRequest": {
                                 "url": {
@@ -1616,7 +1562,7 @@
                     "event": []
                 },
                 {
-                    "id": "8e0df3ce-72d8-4453-ad88-29b7d5375691",
+                    "id": "ad94e866-054b-4609-ba5a-06417abc78b2",
                     "name": "Delete one or more simple cookies",
                     "request": {
                         "name": "Delete one or more simple cookies",
@@ -1645,7 +1591,7 @@
                     },
                     "response": [
                         {
-                            "id": "4016d8bd-8c29-46a4-be3f-6877f7e9c823",
+                            "id": "d33f6d38-7700-47a1-b7a0-1fd344c6f3a8",
                             "name": "OK",
                             "originalRequest": {
                                 "url": {
@@ -1695,7 +1641,7 @@
         }
     ],
     "info": {
-        "_postman_id": "5aa129ea-5614-44ae-a89c-80ab0a17b8a3",
+        "_postman_id": "735f49e3-d159-4ed7-84ee-a272d4c0758c",
         "name": "Postman Echo v1.0.0 - openapi",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
