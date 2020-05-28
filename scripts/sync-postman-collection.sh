@@ -9,7 +9,6 @@ collection_json="./openapi/postman-echo-postman-v$version.json"
 
 openapi2postmanv2 -s $openapi_yaml -o $collection_json -p
 
-# collection_id=$(postmanctl get collection -o jsonpath="{[?(@.name=='$name')].id}")
 collection_id=$(postmanctl get co -o json | jq -r '.[] | select(.name=="'"$name"'") | select(has("fork") | not).id')
 
 if [ -z $collection_id ]
