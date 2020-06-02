@@ -8,7 +8,9 @@ phases:
       - "echo \"contexts:\n  build:\n    apikey: $POSTMAN_API_KEY\n    apiroot: https://api.postman.com\n\" > ~/.postmanctl.yaml"
       - postmanctl config use-context build
 
-  build: # Run build sequence here...
+  build:
+    commands:
+      - echo "Building..." # Run build sequence here...
   post_build:
     commands:
       - ./scripts/sync-postman-collection.sh
