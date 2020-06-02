@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - wget -cO - https://github.com/kevinswiber/postmanctl/releases/download/v1.1.2/postmanctl_1.1.2_Linux_x86_64.tar.gz > ./postmanctl.tar.gz
-      - tar -xzf ./postmanctl.tar.gz /usr/local/bin/postmanctl
+      - tar -xzf ./postmanctl.tar.gz ./postmanctl && mv ./postmanctl /usr/local/bin/postmanctl
       - "echo \"contexts:\n  build:\n    apikey: $POSTMAN_API_KEY\n    apiroot: https://api.postman.com\n\" > ~/.postmanctl.yaml"
       - postmanctl config use-context build
 
