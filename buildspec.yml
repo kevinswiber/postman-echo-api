@@ -9,7 +9,7 @@ phases:
       - tar -xzf ./postmanctl.tar.gz postmanctl && mv ./postmanctl /usr/local/bin/postmanctl
       - "echo \"contexts:\n  build:\n    apikey: $POSTMAN_API_KEY\n    apiroot: https://api.postman.com\n\" > ~/.postmanctl.yaml"
       - postmanctl config use-context build
-      - npm install openapi-to-postman -g
+      - npm install openapi-to-postmanv2 -g
 
   build:
     commands:
